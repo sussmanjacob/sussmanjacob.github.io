@@ -1,6 +1,6 @@
 title: Jacob Sussman
 logo: /assets/headshot_img.png
-description: Hi, I'm Jacob!
+description: [Link to my CV](./assets/sample-cv.pdf)
 show_downloads: false
 google_analytics:
 remote_theme: pages-themes/minimal@v0.2.0
