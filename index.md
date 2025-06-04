@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Link to my CV](./cv-page.html).
+[Link to my CV](./assets/sample-cv.pdf).
 
 There should be whitespace between paragraphs.
 
