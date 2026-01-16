@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Profile</title>
+    <title>Jacob Sussman | Academic Profile</title>
     <style>
         /* --- Color Variables & Basic Setup --- */
         :root {
@@ -21,7 +21,6 @@
             padding: 0;
         }
 
-        /* --- Container for centering content --- */
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -36,11 +35,10 @@
             border-bottom: 5px solid var(--primary-color);
         }
 
-        /* Circular Profile Image */
         .profile-photo {
             width: 150px;
             height: 150px;
-            border-radius: 50%; /* Makes it a circle */
+            border-radius: 50%;
             object-fit: cover;
             border: 4px solid white;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -78,7 +76,7 @@
             color: var(--accent-color);
         }
 
-        /* --- CV Button Styling --- */
+        /* --- CV Button --- */
         .btn-cv {
             display: inline-block;
             background-color: var(--primary-color);
@@ -92,18 +90,45 @@
         }
         .btn-cv:hover {
             background-color: var(--accent-color);
-            color: white; /* Ensure text stays white on hover */
         }
 
         /* --- Section Styling --- */
         section {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
             margin-top: 40px;
         }
         h2 {
             color: var(--primary-color);
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* --- PAPERS SECTION SPECIFIC CSS --- */
+        .paper-item {
+            margin-bottom: 25px;
+        }
+        .paper-title {
+            font-weight: 700;
+            font-size: 1.15rem;
+            display: block; /* Forces title to own line */
+            color: #222;
+        }
+        .paper-details {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .paper-links a {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 600;
+        }
+        .paper-links a:hover {
+            text-decoration: underline;
         }
 
         /* --- Footer --- */
@@ -124,8 +149,8 @@
         
         <h1>Jacob Sussman</h1>
         <div class="subtitle">
-            PhD Student<br>
-            Duke University
+            Researcher & Educator<br>
+            University of Example
         </div>
 
         <a href="cv.pdf" class="btn-cv" target="_blank">Download CV</a>
@@ -135,6 +160,7 @@
         <nav>
             <a href="#about">About</a>
             <a href="#research">Research</a>
+            <a href="#papers">Papers</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -153,10 +179,33 @@
             <section id="research">
                 <h2>Research Interests</h2>
                 <ul>
-                    <li>Topic One (e.g., Machine Learning)</li>
-                    <li>Topic Two (e.g., Data Analysis)</li>
-                    <li>Topic Three (e.g., Public Policy)</li>
+                    <li>Machine Learning & AI</li>
+                    <li>Data Visualization</li>
+                    <li>Computational Biology</li>
                 </ul>
+            </section>
+
+            <section id="papers">
+                <h2>Selected Papers</h2>
+                
+                <div class="paper-item">
+                    <span class="paper-title">"A Novel Method for Academic Web Design"</span>
+                    <span class="paper-details">Jacob Sussman, Jane Doe. Journal of Web Engineering, 2025.</span>
+                    <div class="paper-links">
+                        <a href="#">[PDF]</a> 
+                        <a href="#">[Code]</a>
+                        <a href="#">[Abstract]</a>
+                    </div>
+                </div>
+
+                <div class="paper-item">
+                    <span class="paper-title">"Optimizing Neural Networks for Small Devices"</span>
+                    <span class="paper-details">Authors List. Conference on AI, 2024.</span>
+                    <div class="paper-links">
+                        <a href="#">[PDF]</a>
+                        <a href="#">[Slides]</a>
+                    </div>
+                </div>
             </section>
 
             <section id="contact">
