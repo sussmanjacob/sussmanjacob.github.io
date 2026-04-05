@@ -79,6 +79,28 @@
             flex-wrap: wrap;
         }
 
+        /* --- Icon Links --- */
+        .icon-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .icon-link:hover {
+            background-color: var(--accent-color);
+        }
+        .icon-link svg {
+            width: 18px;
+            height: 18px;
+            fill: white;
+        }
+
         /* --- CV Button --- */
         .btn-cv {
             display: inline-block;
@@ -214,6 +236,20 @@
                 <div class="subtitle">PhD Student at Duke University</div>
                 <div class="header-actions">
                     <a href="cv.pdf" class="btn-cv" target="_blank">Download CV</a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/jacobsussman" class="icon-link" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.45 20.45h-3.554v-5.57c0-1.328-.024-3.037-1.85-3.037-1.851 0-2.135 1.445-2.135 2.939v5.668H9.357V9h3.414v1.561h.047c.476-.9 1.637-1.85 3.37-1.85 3.602 0 4.268 2.37 4.268 5.455v6.284zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+
+                    <!-- Scholars@Duke -->
+                    <a href="https://scholars.duke.edu/person/Jacob.Sussman" class="icon-link" target="_blank" aria-label="Scholars@Duke">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
